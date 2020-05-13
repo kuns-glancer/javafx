@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.DatePicker?>
+<Tab text="无标题选项卡 3" xmlns:fx="http://javafx.com/fxml" fx:controller="saber.kuns.application.controller.IncluController">
+	<content>
+		<AnchorPane minHeight="0.0" minWidth="0.0"
+			prefHeight="180.0" prefWidth="200.0" >
+		 <Button fx:id="btn1"  mnemonicParsing="false" onAction="#say" prefHeight="33.0" prefWidth="102.0" text="萨达" />
+		 <DatePicker></DatePicker>
+		 </AnchorPane>
+	</content>
+</Tab>

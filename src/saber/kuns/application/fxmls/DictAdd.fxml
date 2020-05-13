@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="358.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="saber.kuns.application.controller.DictAddController">
+	<children>
+		<GridPane layoutX="31.0" layoutY="97.0" prefHeight="141.0" prefWidth="466.0">
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="334.0" minWidth="10.0" prefWidth="150.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="316.0" minWidth="10.0" prefWidth="316.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+			</rowConstraints>
+			<children>
+				<Label text="类型" GridPane.halignment="RIGHT">
+					<GridPane.margin>
+						<Insets right="10.0" />
+					</GridPane.margin>
+				</Label>
+				<Label text="编码" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+					<GridPane.margin>
+						<Insets right="10.0" />
+					</GridPane.margin>
+				</Label>
+				<Label text="标签" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+					<GridPane.margin>
+						<Insets right="10.0" />
+					</GridPane.margin>
+				</Label>
+				<TextField fx:id="categoryTF" prefHeight="23.0" prefWidth="281.0" GridPane.columnIndex="1" GridPane.vgrow="ALWAYS" />
+				<TextField fx:id="valueTF" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS" />
+				<Button mnemonicParsing="false" onAction="#save" prefHeight="30.0" prefWidth="74.0" text="保存" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+				<Button mnemonicParsing="false" onAction="#reset" prefHeight="30.0" prefWidth="74.0" text="取消" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#genCode" prefHeight="24.0" prefWidth="50.0" text="生成" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+            <TextField fx:id="codeTF" maxWidth="263.0" prefHeight="23.0" prefWidth="231.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+			</children>
+		</GridPane>
+		<Text layoutX="77.0" layoutY="53.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="系统属性新增" wrappingWidth="123.240234375">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Text>
+	</children>
+</AnchorPane>

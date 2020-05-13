@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="479.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="saber.kuns.application.controller.MainController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <SplitPane dividerPositions="0.1572052401746725" focusTraversable="true" layoutX="7.0" layoutY="0.0" orientation="VERTICAL" prefHeight="479.0" prefWidth="855.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="96.0" prefWidth="395.0" />
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="406.0" prefWidth="853.0">
+          <children>
+            <Accordion layoutX="0.0" layoutY="0.0" prefHeight="359.0" prefWidth="207.0">
+              <panes>
+                <TitledPane animated="false" expanded="true" prefHeight="500.0000999999975" text="伙食费" fx:id="x1">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <Button fx:id="viewBtn" layoutX="-5.0" layoutY="0.0" mnemonicParsing="false" onAction="#viewList" prefHeight="38.0" prefWidth="210.0" text="浏览" />
+                        <Button fx:id="addBtn" layoutX="-5.0" layoutY="38.0" mnemonicParsing="false" onAction="#addAccodationPage" prefHeight="38.0" prefWidth="210.0" text="添加" />
+                        <Button layoutX="-5.0" layoutY="76.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="210.0" text="图表" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+                <TitledPane animated="false" expanded="false" text="交通费">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <Button layoutX="-5.0" layoutY="0.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="210.0" text="浏览" />
+                        <Button layoutX="-5.0" layoutY="38.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="210.0" text="添加" />
+                        <Button layoutX="-5.0" layoutY="76.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="210.0" text="图表" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+                <TitledPane animated="false" expanded="false" text="其他费用" fx:id="x2">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="292.0" prefWidth="200.0">
+                      <children>
+                        <Button layoutX="-5.0" layoutY="0.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="210.0" text="浏览" />
+                        <Button layoutX="-5.0" layoutY="38.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="210.0" text="添加" />
+                        <Button layoutX="-5.0" layoutY="76.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="210.0" text="图表" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+                <TitledPane animated="false" expanded="false" text="字典管理">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <Button layoutX="-5.0" layoutY="0.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="210.0" text="浏览" />
+                        <Button fx:id="dictAddBtn" onAction="#dictAddPage" layoutX="-5.0" layoutY="38.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="210.0" text="添加" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
+            <AnchorPane fx:id="content" layoutX="207.0" layoutY="1.0" prefHeight="395.0" prefWidth="646.0" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>

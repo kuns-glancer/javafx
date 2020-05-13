@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="485.0" prefWidth="545.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="saber.kuns.application.controller.TabController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TabPane fx:id="tabPane" layoutX="0.0" layoutY="0.0" prefHeight="418.0" prefWidth="531.0000999999975" tabClosingPolicy="ALL_TABS">
+      <tabs>
+        <Tab text="无标题选项卡 1">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="454.0" prefWidth="520.0" />
+          </content>
+        </Tab>
+        <Tab text="无标题选项卡 2">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          </content>
+        </Tab>
+        <fx:include fx:id="abc" source="Inclu.fxml"/>
+      </tabs>
+    </TabPane>
+    
+    <Button fx:id="btn" layoutX="43.0" layoutY="438.0" mnemonicParsing="false" onAction="#addTab" prefHeight="33.0" prefWidth="102.0" text="Button" />
+  </children>
+</AnchorPane>

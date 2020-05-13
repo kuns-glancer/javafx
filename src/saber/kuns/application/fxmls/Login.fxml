@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane blendMode="SRC_OVER" depthTest="INHERIT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" rotate="0.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="saber.kuns.application.controller.LoginController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <GridPane alignment="CENTER_RIGHT" depthTest="DISABLE" disable="false" focusTraversable="false" layoutX="-13.0" layoutY="103.0" prefHeight="160.0" prefWidth="481.0">
+      <children>
+        <Button fx:id="btn_reset" mnemonicParsing="false" onAction="#reset" prefHeight="30.0" prefWidth="84.0" text="取消" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+          <font>
+            <Font name="System Bold" size="12.0" fx:id="x1" />
+          </font>
+        </Button>
+        <TextField fx:id="tf_username" prefHeight="30.0" prefWidth="198.0" promptText="输入用户名" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label contentDisplay="CENTER" labelFor="$null" text="用户名" textAlignment="RIGHT" textOverrun="CLIP" underline="false" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.rowIndex="0" GridPane.valignment="CENTER">
+          <font>
+            <Font name="System Bold" size="14.0" fx:id="x2" />
+          </font>
+          <textFill>
+            <Color blue="1.000" green="0.520" red="0.200" fx:id="x3" />
+          </textFill>
+          <GridPane.margin>
+            <Insets right="20.0" fx:id="x4" />
+          </GridPane.margin>
+        </Label>
+        <Label font="$x2" labelFor="$null" text="密码" textFill="$x3" textOverrun="CLIP" GridPane.columnIndex="0" GridPane.halignment="RIGHT" GridPane.margin="$x4" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+        <PasswordField fx:id="tf_pwd" prefHeight="30.0" prefWidth="198.0" promptText="输入密码" text="" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button fx:id="btn_login" alignment="CENTER" contentDisplay="CENTER" font="$x1" mnemonicParsing="false" onAction="#login" prefHeight="30.0" prefWidth="84.0" text="登录" textAlignment="CENTER" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="15.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</AnchorPane>
